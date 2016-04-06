@@ -1,0 +1,142 @@
+<p id="notice"><%= notice %></p>
+
+<br>
+<br>
+<br>
+<br>
+<h2 class="fonty" align="center"> بيانات المتقدم</h2>
+<br>
+<br>
+<br>
+<div>
+<p class="fonty">
+<%= image_tag @applicant.image.url %>
+</p>
+
+<p class="fonty">
+  <strong>الاسم:</strong>
+  <%= @applicant.name %>
+</p>
+
+<p class="fonty">
+  <strong>الرقم الشخصي:</strong>
+  <%= @applicant.QID %>
+</p>
+
+<p class="fonty">
+  <strong>الجنسية:</strong>
+  <%= @applicant.nationality %>
+</p>
+
+<p class="fonty">
+  <strong>تاريخ الميلاد:</strong>
+  <%= @applicant.DateOfBirth %>
+</p>
+
+<p class="fonty">
+  <strong>الجنس:</strong>
+  <%= @applicant.gender %>
+</p>
+
+<p class="fonty">
+  <strong>الحالة الاجتماعية:</strong>
+  <%= @applicant.status %>
+</p>
+
+<p class="fonty">
+  <strong>عدد الأطفال:</strong>
+  <%= @applicant.noOfChildren %>
+</p>
+
+<p class="fonty">
+  <strong>المنطقة السكنية:</strong>
+  <%= @applicant.livingArea %>
+</p>
+
+<p class="fonty">
+  <strong>رقم الهاتف:</strong>
+  <%= @applicant.phoneNo %>
+</p>
+
+<p class="fonty">
+  <strong>رقم الجوال:</strong>
+  <%= @applicant.mobileNo %>
+</p>
+
+<p class="fonty">
+  <strong>نوع الإعاقة:</strong>
+  <%= @applicant.disability %>
+</p>
+
+<p class="fonty">
+  <strong>التفاصيل:</strong>
+  <%= @applicant.details %>
+</p>
+
+<p class="fonty">
+  <strong>ملاحظات:</strong>
+  <%= @applicant.notes %>
+</p>
+
+<p class="fonty">
+  <strong>العمر عند الإصابة بالإعاقة:</strong>
+  <%= @applicant.age %>
+</p>
+
+<p class="fonty">
+  <strong>أسباب الإصابة:</strong>
+  <%= @applicant.reason %>
+</p>
+
+<p class="fonty">
+  <strong>المستوى التعليمي:</strong>
+  <%= @applicant.education %>
+</p>
+
+<p class="fonty">
+  <strong>الدورات:</strong>
+  <%= @applicant.workshop %>
+</p>
+
+<p class="fonty">
+  <strong>الوظيفة الحالية:</strong>
+  <%= @applicant.currentJob %>
+</p>
+
+<p class="fonty">
+  <strong>الوظائف التي عملت بها:</strong>
+  <%= @applicant.jobDescription %>
+</p>
+
+<p class="fonty">
+  <strong>الوظيفة التي تستطيع القيام بها:</strong>
+  <%= @applicant.abilities %>
+</p>
+
+<p class="fonty">
+  <strong>الوزارات/ المؤسسات المرشحة للتوظيف:</strong>
+  <%= @applicant.preference %>
+</p>
+
+<p class="fonty">
+  <strong>الخبرات:</strong>
+  <%= @applicant.skills %>
+</p>
+
+<br>
+<br>
+<p class="fonty floatR" >
+<%= link_to 'تعديل', edit_applicant_path(@applicant) %> |
+<%= link_to 'رجوع', applicants_path %>
+</p>
+
+
+<button onclick="myFunction()" class="fonty">اطبع هذه الصفحة</button>
+
+<script>
+function myFunction() {
+    window.print();
+}
+</script>
+
+</div>
